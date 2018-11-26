@@ -1,7 +1,3 @@
-function getTheDay() {
-
-}
-
 let year = new Date().getFullYear();
 document.getElementById("year").innerHTML = year;
 
@@ -26,5 +22,3 @@ for (let i = 0; i < 12; i++) {
         classDays[i].appendChild(d);
     }
 }
-
-
