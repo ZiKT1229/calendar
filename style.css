@@ -30,9 +30,14 @@ main {
     background: white;
 }
 
+.months h2 {
+    background: rgba(0, 0, 255, 0.3);
+}
+
 .week {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
+    background: coral;
 }
 
 .days {
@@ -44,9 +49,9 @@ main {
     margin: auto;
     width: 20px;
     height: 20px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .day:hover {
-    background: wheat;
+    background: greenyellow;
 }
