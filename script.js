@@ -1,5 +1,8 @@
-let year = new Date().getFullYear();
+let nowday = new Date();
+let year = nowday.getFullYear();
 document.getElementById("year").innerHTML = year;
+let today = nowday.getMonth();
+document.getElementsByClassName("months")[today].classList.add("hightlight");
 
 let monthOfDays = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let classDays = document.getElementsByClassName("days");
@@ -20,5 +23,8 @@ for (let i = 0; i < 12; i++) {
         d.className = "day";
         d.innerHTML = j + 1;
         classDays[i].appendChild(d);
+        if (i == today && j + 1 == nowday.getDate()) {
+            d.classList.add("hightlight");
+        }
     }
 }

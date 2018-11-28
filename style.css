@@ -40,20 +40,23 @@ main {
     background: coral;
 }
 
+.hightlight {
+    box-shadow: 0 0 30px pink;
+}
+
 .days {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.days .hightlight {
+    background: skyblue;
 }
 
 .day {
     margin: auto;
     width: 20px;
     height: 20px;
-    border-radius: 10px;
-}
-
-.day:hover {
-    background: greenyellow;
 }
 
 @media only screen and (max-width: 1250px) {
