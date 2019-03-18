@@ -51,12 +51,12 @@ main {
 
 .days .hightlight {
     background: skyblue;
+    border-radius: 100%;
 }
 
 .day {
     margin: auto;
-    width: 20px;
-    height: 20px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1250px) {
